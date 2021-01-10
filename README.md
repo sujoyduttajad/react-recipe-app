@@ -4,7 +4,7 @@
 
 This React app is build with basic react search functionality and using css modules. 
 
-<img src="./todolist-large.png" alt="the screenshot of the app large screen"/>
+<img src="./recipe-app.png" alt="the screenshot of the app large screen"/>
 
 The recipes are fetched from - 
 Edamam - Eat better!www.edamam.com 
