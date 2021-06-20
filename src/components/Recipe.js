@@ -9,7 +9,7 @@ const Recipe = () => {
     const APP_KEY = API_KEY;
     const [recipes, setRecipes] = useState([]);
     const [search, setSearch] = useState('');
-    const [query, setQuery] = useState('chicken');
+    const [query, setQuery] = useState();
 
     useEffect(() => {
         getRecipes();
@@ -46,12 +46,12 @@ const Recipe = () => {
             <div className="recipes">
                 {recipes.map((recipe, index) => (
                     
-                        <SingleRecipe key={index} 
-                            title={recipe.recipe.label}
-                            calories={recipe.recipe.calories}
-                            image={recipe.recipe.image}
-                            ingredients={recipe.recipe.ingredients}
-                        />
+                    <SingleRecipe key={index} 
+                        title={recipe.recipe.label}
+                        calories={recipe.recipe.calories}
+                        image={recipe.recipe.image}
+                        ingredients={recipe.recipe.ingredients}
+                    />
                     
                 ))}
             </div>
