@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap');
 
 .recipe {
-    border-radius: 60px;
+    border-radius: 10px;
     box-shadow: 0px 5px 20px rgb(71, 71, 71);
     margin: 20px;
     display: flex;
@@ -10,7 +10,7 @@
     background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
     background-blend-mode: multiply,multiply;
     align-items: center;
-    width: 40%;
+    width: 20%;
     max-width: 100%;
 }
 
@@ -36,7 +36,7 @@ h2 {
 
 @media screen and (min-width: 320px) and (max-width: 800px) {
     .recipe {
-        border-radius: 20px;
+        border-radius: 2px;
         box-shadow: 0px 5px 20px rgb(71, 71, 71);
         margin: 10px;
         padding: 10px;
