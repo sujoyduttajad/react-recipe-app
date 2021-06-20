@@ -166,9 +166,6 @@ input {
     margin-left: 5%;
     font-size: 60px;
   }
-  .App {
-    max-width: 100%;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .recipes {
@@ -187,9 +184,7 @@ input {
     background-size: 17%;
     background-position: 9rem 5rem;
   }
-  .App {
-    width: 100%;
-  }
+
 }
 @media screen and (min-width: 1023px) { 
   .recipes {
@@ -208,7 +203,5 @@ input {
     background-size: 17%;
     background-position: 9rem 5rem;
   }
-  .App {
-    width: 100vw;
-  }
+  
 }
