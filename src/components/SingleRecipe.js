@@ -6,7 +6,7 @@ const SingleRecipe = ({title, calories, image, ingredients}) => {
     return (
 
         <div className={style.recipe}>
-            <h1 className={style.header}>{title}</h1>
+            <h1 className={style.header}>{title.length > 10 ? title.slice(0, 10)+'...' : title}</h1>
             <img className={style.image} src={image} alt={title} /> 
             <h2>Calories - {Math.floor(calories)}</h2>
             {/* <ol><strong>Ingredients -</strong>
