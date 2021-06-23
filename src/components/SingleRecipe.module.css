@@ -10,19 +10,19 @@
     background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
     background-blend-mode: multiply,multiply;
     align-items: center;
-    width: 20%;
+    width: 15%;
     
 }
 
 .image {
-    border-radius: 25px;
-    
+    border-radius: 10px 10px 0 0;
+    width: 100%;
 }
 
 .header {
     margin: 2.5rem;
-    margin-left: 3.6em;
-    margin-right: 3.6em;
+    /* margin-left: 3.6em;
+    margin-right: 3.6em; */
     
 }
 
