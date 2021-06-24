@@ -33,7 +33,6 @@ const Recipe = () => {
     return (
         <div>
             <form onSubmit={getSearch} className="search-form">
-                <h1 className="header">Recipe App</h1>
                 <input 
                     className="search-bar" 
                     type="text" 
