@@ -1,5 +1,15 @@
 
 $sidebar-color: #F3F3F3;
+$primary-black: #303030;
+$secondary-grey: #999999;
+$Color: #26AE60;
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
 
 .slideout-right {
     @include flex(column, flex-start, flex-start);
@@ -23,9 +33,42 @@ $sidebar-color: #F3F3F3;
     
 }
 
-// .add-section {
+.add-section {
+    @include flex(column, flex-start, center);
 
-// }
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(71, 71, 71);
+    margin: 20px;
+    width: 18rem;
+    height: 22rem;
+    background-color: #fff;
+
+    img {
+        width: 18rem;
+        border-radius: 10px 10px 0 0;
+    }
+
+    div {
+        @include flex(row, center, center);
+    }
+
+    .upload-recipe-button {
+        // @include flex(row, center, center);
+        border: 0;
+        outline: 0;
+        padding: 5px 20px;
+        background-color: $Color;
+        color: #FAF9FB;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 10rem;
+        height: 2.5rem;
+        font-size: 1.3em;
+        box-shadow: 0px 5px 20px rgb(71, 71, 71);
+        cursor: pointer;
+    }
+}
 
 .trend-section {
     width: 8rem;
