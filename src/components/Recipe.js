@@ -45,7 +45,7 @@ const Recipe = () => {
                     />
                 </div>
                 <button className="search-button" type="submit">
-                    <Filter2 name="category" set="light border" primaryColor="#888888" size="medium"/>
+                    <Filter2 set="light border" primaryColor="#888888" size="large"/>
                     <span>Filter</span>
                 </button>
             </form>
