@@ -1,22 +1,32 @@
-
-
-  .main-body {
-    width: 100%;
-    position: relative;
-    left: 12rem;
-    
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
   }
+
+  .main-body {  
+    width: 60vw;
+    // position: relative;
+    // left: 12rem;
+  }
+  .recipes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
   .search-form {
     @include flex(row, flex-start, center);
     padding: 20px;
     padding-right: 5px;
-    margin-left: 12rem;
+    margin-left: 1rem;
     padding-top: 2%;
     max-height: 10vh;
   }
   .search-container {
     @include flex(row, flex-start, center);
-    width: 50%;
+    width: 70%;
     height: 2rem;
     padding: 0.4em;
     padding-left: 0.5rem;
@@ -69,11 +79,7 @@
         padding-left: 0.8rem;
     }
   }
-  .recipes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+  
   
   .header {
     margin-right: 60px;
@@ -85,14 +91,14 @@
   
   @media screen and (min-width: 480px) and (max-width: 540px) {
     /* tablet layout */
-    .recipes {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 51em;
-    }
+    // .recipes {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   align-items: center;
+    //   flex-wrap: wrap;
+    //   width: 51em;
+    // }
     
     .search-bar {
       width: 100%;
@@ -145,16 +151,16 @@
   }
   
   @media screen and (min-width: 540px) and (max-width: 767px) {
-    .recipes {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      max-width: 88%;
-      padding-left: 12px;
-      padding-right: 12px;
-    }
+    // .recipes {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   align-items: center;
+    //   flex-wrap: wrap;
+    //   max-width: 88%;
+    //   padding-left: 12px;
+    //   padding-right: 12px;
+    // }
     .search-form {
       min-height: 10vh;
       display: inline;
@@ -188,7 +194,7 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      max-width: 92%;
+      max-width: 100%;
       padding-left: 12px;
       padding-right: 12px;
     }
@@ -196,13 +202,10 @@
   }
   @media screen and (min-width: 1023px) { 
     .recipes {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 98%;
-      padding: 5px;
+        @include flex(row, space-evenly, center);
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5px;
     }
     
   }
