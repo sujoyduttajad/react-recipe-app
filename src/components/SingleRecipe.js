@@ -6,8 +6,10 @@ const SingleRecipe = ({title, calories, image, ingredients}) => {
 
         <div className='recipe'>
             <img className='image' src={image} alt={title} /> 
-            <h1 className='header'>{title.length > 10 ? title.slice(0, 10)+'...' : title}</h1>
-            <h2>Calories - {Math.floor(calories)}kcal</h2>
+            <div>
+                <h1 className='recipe-header'>{title.length > 10 ? title.slice(0, 10)+'...' : title}</h1>
+                <h2 className="calories-header">Calories - {Math.floor(calories)}kcal</h2>
+            </div>
             {/* <ol><strong>Ingredients -</strong>
                 {ingredients.map(ingredient => (
                     <li>{ingredient.text}</li>
