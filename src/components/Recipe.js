@@ -31,7 +31,7 @@ const Recipe = () => {
         setSearch('');
     }
     return (
-        <div>
+        <div className="main-body">
             <form onSubmit={getSearch} className="search-form">
                 <input 
                     className="search-bar" 

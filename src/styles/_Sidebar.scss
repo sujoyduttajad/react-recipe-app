@@ -39,7 +39,7 @@
 
 .icon-container {
     @include flex(row, space-between, center);
-    
+    cursor: pointer;
     h3 {
         font-size: 1.6rem;
         font-weight: 400;
