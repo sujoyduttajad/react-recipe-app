@@ -1,10 +1,7 @@
 @import './Sidebar';
 @import './SingleRecipe';
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
-
 
 .App {
   min-height: 100vh;
@@ -52,13 +49,11 @@ input {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* font-family:  'Fredoka One', cursive; */
 }
 
 .header {
   margin-right: 60px;
   font-size: 3.2em;
-  /* font-family: 'Sofia', cursive; */
   color: aliceblue;
   text-decoration: aliceblue;
   text-shadow: 10px 6px 15px rgb(71, 71, 71);
