@@ -39,8 +39,15 @@
 }
 
 .icon-container {
-    @include flex(row, space-between, center);
-    cursor: po;
+    @include flex(row, flex-start, center);
+    cursor: pointer;
+    padding: 0.3rem 1rem;
+    width: 15rem;
+
+    &:hover {
+        border-radius: 25px;
+        background-color: #92D6AF;
+    }
     h3 {
         font-size: 1.6rem;
         font-weight: 400;
