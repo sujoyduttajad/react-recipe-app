@@ -7,6 +7,8 @@
 
 $primary-black: #303030;
 $secondary-grey: #999999;
+$background-color: #FAF9FB;
+
 
 @mixin flex($direction, $justify, $align) {
   display: flex;
@@ -24,6 +26,7 @@ $secondary-grey: #999999;
   width: 100%;
   margin: 0 auto;
   font-family: 'Public Sans', sans-serif;
+  background-color: $background-color;
 }
 
 .sidebar {
@@ -31,11 +34,10 @@ $secondary-grey: #999999;
 }
 
 .add {
-  width: calc(20/100 * 100vw);
-  height: 100vh;
+  width: calc(30/100 * 100vw);
 } 
 
 
 .body {
-  width: calc(60/100 * 100vw);
+  width: calc(50/100 * 100vw);
 }

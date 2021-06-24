@@ -3,7 +3,7 @@ import './styles/app.scss';
 import Recipe from './components/Recipe'
 import Sidebar from './components/Sidebar'
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+import TrendSection from './components/TrendSection'
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
         </div>
         <div className="col-lg-3">
           <div className="add">
-          
+          <TrendSection />
           </div>
         </div>
       </div>

@@ -1,22 +1,32 @@
 
+$sidebar-color: #F3F3F3;
+
 .slideout-right {
     @include flex(column, flex-start, flex-start);
 
-    // position: fixed;
-    // top: 0;
-    // right: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
     bottom: 10;
     z-index: 200;
     font-family: 'Public Sans', sans-serif;
-    background-color: #000;
+    background-color: $sidebar-color;
     color: aliceblue;
-    transform: translateX(100%);
-    transition-delay: 0s , 0.9s , 0.9s;
-    transition-duration: 0.5s;
+    transform: translateX(0%);
+    // transition-delay: 0s , 0.9s , 0.9s;
+    // transition-duration: 0.5s;
     opacity: 1;
-    width: 12.8rem;
+    width: 19rem;
     padding: 1.7rem;
     padding-left: 1.2rem;
     height: 100vh;
     
+}
+
+// .add-section {
+
+// }
+
+.trend-section {
+    width: 8rem;
 }

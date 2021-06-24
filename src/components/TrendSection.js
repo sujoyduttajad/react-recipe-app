@@ -5,15 +5,11 @@ const TrendSection = () => {
         <aside>
             
             <section className="slideout-right">
-                <div>
-                    <h1>Right</h1>
-                    <h1>Right</h1>
-                    <h1>Right</h1>
-                    <h1>Right</h1>
-                    <h1>Right</h1>
-                    <h1>Right</h1>
-                    <h1>Right</h1>
-                    <h1>Right</h1>
+                <div className='add-section'>
+                    
+                </div>
+                <div className='trend-section'>
+
                 </div>
             </section>
         </aside>
