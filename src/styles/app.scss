@@ -7,10 +7,33 @@
 $primary-black: #303030;
 $secondary-grey: #999999;
 
-.App {
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+
+
+.row {
+  @include flex(row, center, center);
   min-height: 100vh;
   max-width: 100vw;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   font-family: 'Public Sans', sans-serif;
+}
+
+.sidebar {
+  width: calc(20/100 * 100vw);
+}
+
+.add {
+  width: calc(20/100 * 100vw);
+} 
+
+
+.body {
+  width: calc(60/100 * 100vw);
 }

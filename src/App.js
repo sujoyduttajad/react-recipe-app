@@ -11,18 +11,18 @@ function App() {
     <div className="container">
       <div className="row">
         <div className="col-lg-3">
-          <div className="">
+          <div className="sidebar">
             <Sidebar />
              
           </div>
         </div>
         <div className="col-lg-6">
-          <div className="App">
+          <div className="body">
           <Recipe />
           </div>
         </div>
         <div className="col-lg-3">
-          <div className="App">
+          <div className="add">
           
           </div>
         </div>

@@ -1,10 +1,4 @@
 
-@mixin flex($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    align-items: $align;
-    justify-content: $justify;
-}
 
   .main-body {
     width: 100%;
