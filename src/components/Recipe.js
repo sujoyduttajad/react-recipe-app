@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {API_ID, API_KEY} from '../lib/API_KEY'
 import SingleRecipe from './SingleRecipe'
+import { Filter2, Search } from 'react-iconly';
 
 
 const Recipe = () => {
@@ -33,25 +34,29 @@ const Recipe = () => {
     return (
         <div className="main-body">
             <form onSubmit={getSearch} className="search-form">
-                <input 
-                    className="search-bar" 
-                    type="text" 
-                    value={search} 
-                    onChange={handleSearch}
-                    placeholder="Search any recipe"
-                />
-                <button className="search-button" type="submit">Search</button>
+                <div className="search-container">
+                    <Search set="light border" primaryColor="#888888" size="large"/>
+                    <input 
+                        className="search-bar" 
+                        type="text" 
+                        value={search} 
+                        onChange={handleSearch}
+                        placeholder="Search any recipe"
+                    />
+                </div>
+                <button className="search-button" type="submit">
+                    <Filter2 name="category" set="light border" primaryColor="#888888" size="medium"/>
+                    <span>Filter</span>
+                </button>
             </form>
             <div className="recipes">
-                {recipes.map((recipe, index) => (
-                    
+                {recipes.map((recipe, index) => (                  
                     <SingleRecipe key={index} 
                         title={recipe.recipe.label}
                         calories={recipe.recipe.calories}
                         image={recipe.recipe.image}
                         // ingredients={recipe.recipe.ingredients}
-                    />
-                    
+                    />   
                 ))}
             </div>
         </div>

@@ -6,45 +6,72 @@
     justify-content: $justify;
 }
 
-    .main-body {
-        width: 100%;
-        position: relative;
-        left: 12rem;
+  .main-body {
+    width: 100%;
+    position: relative;
+    left: 12rem;
   }
-    .search-form {
-    min-height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    padding-top: 5%;
+  .search-form {
+    @include flex(row, flex-start, center);
+    padding: 20px;
+    padding-right: 5px;
+    margin-left: 12rem;
+    padding-top: 2%;
+    max-height: 10vh;
   }
-  
-  .search-bar {
-    width: 40%;
-    font-size: 2em;
-    border: none;
-    outline: 0;
-    padding: 10px;
-    padding-left: 2rem;
-    border-radius: 25px;
+  .search-container {
+    @include flex(row, flex-start, center);
+    width: 50%;
+    height: 2rem;
+    padding: 0.4em;
+    padding-left: 0.5rem;
+    border-radius: 40px;
     box-shadow: 0px 5px 20px rgb(71, 71, 71);
+    
+    border: 0;
+    outline: 0;
+    line-height: 1em;
   }
+  .search-bar {
+    font-size: 1.2em;
+    vertical-align: middle;
+    padding-top: 5px;
+  }
+
   input {
     border: 0;
+    outline: 0;
+    padding-left: 1rem;
+    font-size: 1.2em;
+    font-weight: 600;
     border-radius: 11px;
     background-color: none !important;
+    vertical-align: middle;
+    color: $primary-black !important;
+
+    &::placeholder {
+        font-weight: 500;
+        font-size: 1.2em;
+        padding-top: 1em;
+        vertical-align: middle;
+    }
   }
   
   .search-button {
-    background: lightcoral;
+    @include flex(row, center, center);
     border: 1px solid #ffffff;
     padding: 10px 20px;
-    color: white;
+    background-color: #fff;
+    color: #888888;
     border-radius: 25px;
     margin-left: 5px;
-    font-size: 2em;
+    width: 10rem;
+    font-size: 1.3em;
     box-shadow: 0px 5px 20px rgb(71, 71, 71);
+
+    span {
+        padding-left: 1rem;
+    }
   }
   .recipes {
     display: flex;
@@ -153,18 +180,13 @@
       box-shadow: 0px 5px 20px rgb(71, 71, 71);
     }
     .search-button {
-      width: 87%;
+      width: 8rem;
       margin-left: 6%;
       margin-right: 5%;
       margin-bottom: 5%;
     }
-    .header {
-      margin-right: 5%;
-      text-align: center;
-      margin-left: 5%;
-      font-size: 60px;
-    }
   }
+
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     .recipes {
       display: flex;

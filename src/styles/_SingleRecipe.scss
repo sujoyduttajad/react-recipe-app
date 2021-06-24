@@ -30,7 +30,7 @@ $secondary-grey: #999999;
     margin-top: 1rem;
     margin-bottom: 0;
     margin-left: 0.2rem;
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     font-weight: 700;
     color: $primary-black;
 }
@@ -38,6 +38,7 @@ $secondary-grey: #999999;
 .calories-header {
     color: $secondary-grey;
     font-weight: 400;
+    font-size: 1.3rem;
     margin: 0;
     margin-left: 0.2rem;
     margin-bottom: 1rem;
@@ -47,9 +48,7 @@ ol{
     font-family: inherit;
     margin: 1.2rem;
 }
-h2 {
-    font-family: inherit
-}
+
 
 @media screen and (min-width: 320px) and (max-width: 800px) {
     .recipe {
