@@ -41,16 +41,18 @@
 .icon-container {
     @include flex(row, flex-start, center);
     cursor: pointer;
-    padding: 0.3rem 1rem;
+    padding: 0.1rem 1rem;
     width: 15rem;
+    margin-bottom: 10px;
 
     &:hover {
-        border-radius: 25px;
+        border-radius: 15px;
         background-color: #92D6AF;
     }
     h3 {
         font-size: 1.6rem;
         font-weight: 400;
+        margin: 1rem;
         margin-left: 1rem;
     }
 }
