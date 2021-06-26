@@ -35,7 +35,12 @@ const Recipe = () => {
         <div className="main-body">
             <form onSubmit={getSearch} className="search-form">
                 <div className="search-container">
-                    <Search style={{ textShadow: '10px 6px 15px rgb(71, 71, 71)'}} set="light border" primaryColor="#888888" size="large"/>
+                    <Search 
+                        style={{ textShadow: '10px 6px 15px rgb(71, 71, 71)'}} 
+                        set="light border" 
+                        stroke='bold'
+                        primaryColor="#888888" 
+                        size="large"/>
                     <input 
                         className="search-bar" 
                         type="text" 
@@ -45,7 +50,12 @@ const Recipe = () => {
                     />
                 </div>
                 <button className="search-button" type="submit">
-                    <Filter2 style={{ textShadow: '10px 6px 15px rgb(71, 71, 71)'}} set="light border" primaryColor="#FAF9FB" size="large"/>
+                    <Filter2 
+                        style={{ textShadow: '10px 6px 15px rgb(71, 71, 71)'}} 
+                        set="light border" 
+                        stroke='bold'
+                        primaryColor="#FAF9FB" 
+                        size="large"/>
                     <span>Filter</span>
                 </button>
             </form>
