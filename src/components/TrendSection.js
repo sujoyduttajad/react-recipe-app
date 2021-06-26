@@ -15,7 +15,7 @@ const TrendSection = () => {
                     
                 </div>
                 <div className='trend-section'>
-
+                    
                 </div>
             </section>
         </aside>
