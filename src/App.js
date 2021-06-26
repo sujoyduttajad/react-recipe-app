@@ -22,7 +22,7 @@ function App() {
       // const response = await fetch(`https://api.edamam.com/api/recipes/v2/?q=${chicken}app_id=${APP_ID}&app_key=${APP_KEY}&type=public`);
       
       const data = await response.json();
-      console.log(data);
+      // console.log(data.hits.filter(rec => rec.recipe.label));
       setRecipes(data.hits);
   }
 
@@ -56,7 +56,7 @@ function App() {
         </div>
         <div className="col-lg-3">
           <div className="add">
-          <TrendSection />
+          <TrendSection  recipes={recipes} />
           </div>
         </div>
       </div>

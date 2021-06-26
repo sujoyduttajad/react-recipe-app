@@ -2,7 +2,10 @@ import React from 'react'
 import add from '../images/food-add.svg'
 
 
-const TrendSection = () => {
+const TrendSection = ({  recipes }) => {
+
+    console.log(recipes.map(recipe => recipe.recipe.healthLabels.filter(label => label )));
+
     return (
         <aside>
             
@@ -15,7 +18,11 @@ const TrendSection = () => {
                     
                 </div>
                 <div className='trend-section'>
-                    
+                    <h1>Healthy recipes</h1>
+                    <div>
+                        <img />
+                        <div><p></p></div>
+                    </div>
                 </div>
             </section>
         </aside>

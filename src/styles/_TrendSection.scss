@@ -26,7 +26,7 @@ $Color: #26AE60;
     // transition-delay: 0s , 0.9s , 0.9s;
     // transition-duration: 0.5s;
     opacity: 1;
-    width: 19rem;
+    width: 22rem;
     padding: 1.7rem;
     padding-left: 1.2rem;
     height: 100vh;
@@ -71,13 +71,21 @@ $Color: #26AE60;
 }
 
 .trend-section {
-    @include flex(column, flex-start, center);
+    @include flex(column, flex-start, flex-start);
 
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgb(71, 71, 71);
     margin: 20px;
-    width: 18rem;
+    margin-left: 0;
+    width: 22rem;
     height: 50%;
     background-color: #fff;
+    font-family: inherit;
+
+    h1 {
+        color: $primary-black;
+        font-size: 1.5em;
+        margin-left: 1.8rem;
+    }
 
 }
