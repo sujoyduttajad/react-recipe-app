@@ -39,3 +39,9 @@ $mainColor: #26AE60;
 .body {
   width: calc(50/100 * 100vw);
 }
+
+a {
+  text-decoration: none !important; 
+    outline: none !important;
+    color: inherit;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Category, Document, Heart, Graph, Setting, InfoCircle } from 'react-iconly';
 import logo from '../images/logo.svg'
-
+import { NavLink } from "react-router-dom"; 
 
 const Sidebar = () => {
     return (
@@ -16,10 +16,17 @@ const Sidebar = () => {
                     <Category stroke='bold' name="category" set="light border" primaryColor="white" size="large"/>
                     <h3>Overview</h3>
                 </div>
-                <div className="icon-container">
-                    <Document stroke='bold' name="category" set="light border" primaryColor="white" size="large"/>
-                    <h3>Recipes</h3>
-                </div>
+
+                <NavLink to='/' activeStyle={{
+                    borderRadius: '15px',
+                    backgroundColor: "#92D6AF",
+                }}> 
+                    <div className="icon-container">
+                        <Document stroke='bold' name="category" set="light border" primaryColor="white" size="large"/>
+                        <h3>Recipes</h3>
+                    </div>
+                </NavLink>
+
                 <div className="icon-container">
                     <Heart stroke='bold' name="category" set="light border" primaryColor="white" size="large"/>
                     <h3>Favourites</h3>

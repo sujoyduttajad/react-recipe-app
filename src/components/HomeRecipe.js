@@ -4,10 +4,12 @@ import Recipe from './Recipe'
 import Sidebar from './Sidebar'
 import TrendSection from './TrendSection'
 
+
+
+
 function HomeRecipe({ getSearch, search, handleSearch, recipes}) {
 
   
-
   return (
     <div className="container">
       <div className="row">
@@ -17,12 +19,14 @@ function HomeRecipe({ getSearch, search, handleSearch, recipes}) {
           </div>
         
           <div className="body">
-            <Recipe 
-                getSearch={getSearch}
-                search={search}
-                handleSearch={handleSearch}
-                recipes={recipes} 
-            />
+             
+                <Recipe 
+                    getSearch={getSearch}
+                    search={search}
+                    handleSearch={handleSearch}
+                    recipes={recipes} 
+                />
+            
           </div>
         
           <div className="add">
