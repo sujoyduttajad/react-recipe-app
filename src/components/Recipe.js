@@ -18,6 +18,8 @@ const Recipe = () => {
 
     const getRecipes = async () => {
         const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+        // const response = await fetch(`https://api.edamam.com/api/recipes/v2/?q=${chicken}app_id=${APP_ID}&app_key=${APP_KEY}&type=public`);
+        
         const data = await response.json();
         console.log(data);
         setRecipes(data.hits);
@@ -40,7 +42,7 @@ const Recipe = () => {
                         set="light border" 
                         stroke='bold'
                         primaryColor="#888888" 
-                        size="large"/>
+                        size="medium"/>
                     <input 
                         className="search-bar" 
                         type="text" 
