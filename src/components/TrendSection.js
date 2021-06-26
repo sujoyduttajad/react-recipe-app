@@ -4,7 +4,11 @@ import add from '../images/food-add.svg'
 
 const TrendSection = ({  recipes }) => {
 
-    console.log(recipes.map(recipe => recipe.recipe.healthLabels.filter(label => label )));
+    const healthyRecipes = recipes.filter(recipe => recipe.recipe.dietLabels[0] === 'Low-Carb' ? recipe.recipe.label : '');
+    console.log(healthyRecipes)
+    const recipeList = recipes.map(recipe => recipe.recipe.label);
+    console.log(recipeList);
+
 
     return (
         <aside>
@@ -19,10 +23,14 @@ const TrendSection = ({  recipes }) => {
                 </div>
                 <div className='trend-section'>
                     <h1>Healthy recipes</h1>
-                    <div>
-                        <img />
-                        <div><p></p></div>
-                    </div>
+                    {
+                        healthyRecipes.map(healthy => (
+                            <div className="healthy-recipes">
+                                <img src={healthy.recipe.image} alt={healthy.recipe.label} />
+                                <div className="healthy-recipe-label"><p>{healthy.recipe.label}</p></div>
+                            </div>
+                        ))
+                    }                 
                 </div>
             </section>
         </aside>

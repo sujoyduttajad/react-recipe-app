@@ -23,8 +23,7 @@ $Color: #26AE60;
     background-color: $sidebar-color;
     color: aliceblue;
     transform: translateX(0%);
-    // transition-delay: 0s , 0.9s , 0.9s;
-    // transition-duration: 0.5s;
+    overflow-y: auto;
     opacity: 1;
     width: 22rem;
     padding: 1.7rem;
@@ -61,7 +60,7 @@ $Color: #26AE60;
         color: #FAF9FB;
         border-radius: 10px;
         margin: 0 auto;
-        margin-top: 3rem;
+        margin: 3rem;
         width: 10rem;
         height: 2.5rem;
         font-size: 1.3em;
@@ -78,7 +77,8 @@ $Color: #26AE60;
     margin: 20px;
     margin-left: 0;
     width: 22rem;
-    height: 50%;
+    height: 100%;
+    margin-bottom: 3rem;
     background-color: #fff;
     font-family: inherit;
 
@@ -88,4 +88,25 @@ $Color: #26AE60;
         margin-left: 1.8rem;
     }
 
+}
+
+.healthy-recipes {
+    @include flex(row, flex-start, center);
+    
+    margin: 0.8rem 2rem;
+    img {
+        width: 8rem;
+        height: 8rem;   
+        border-radius: 50%;
+    }
+
+    .healthy-recipe-label {
+        @include flex(row, flex-start, center);
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $primary-black;
+        width: 50%;
+        margin-left: 2rem;
+    }
 }
