@@ -17,8 +17,6 @@ $mainColor: #26AE60;
   justify-content: $justify;
 }
 
-
-
 .row {
   @include flex(row, center, center);
   min-height: 100vh;
