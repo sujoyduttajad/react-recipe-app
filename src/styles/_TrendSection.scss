@@ -98,6 +98,11 @@ $Color: #26AE60;
         width: 8rem;
         height: 8rem;   
         border-radius: 50%;
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow:  5px 5px 5px #d4d3d3, 
+                    -5px -5px 5px #F3F3F3;
+        transition: box-shadow .35s ease !important;
+
     }
 
     .healthy-recipe-label {
