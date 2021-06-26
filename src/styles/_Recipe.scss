@@ -71,11 +71,11 @@ $Color: #26AE60;
     }
   }
   
-  .search-button {
+  .filter-button {
     @include flex(row, center, center);
     border: 0;
     outline: 0;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: $Color !important;
     color: #FAF9FB;
     border-radius: 10px;

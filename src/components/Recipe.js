@@ -24,13 +24,13 @@ const Recipe = ({ getSearch, search, handleSearch, recipes}) => {
                         placeholder="Search any recipe"
                     />
                 </div>
-                <button className="search-button" type="submit">
+                <button className="filter-button" type="submit">
                     <Filter2 
                         style={{ textShadow: '10px 6px 15px rgb(71, 71, 71)'}} 
                         set="light border" 
                         stroke='bold'
                         primaryColor="#FAF9FB" 
-                        size="large"/>
+                        size="medium"/>
                     <span>Filter</span>
                 </button>
             </form>
