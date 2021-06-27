@@ -11,7 +11,9 @@ const Sidebar = () => {
 
                 <div className="logo-container">
                     <img src={logo} alt="logo" />
+                    <div className="edamam-badge" id="edamam-badge" data-color="white"></div>
                 </div>
+                
                 <div className="icon-container">
                     <Category stroke='bold' name="category" set="light border" primaryColor="white" size="large"/>
                     <h3>Overview</h3>
