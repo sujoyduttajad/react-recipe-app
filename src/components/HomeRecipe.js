@@ -7,9 +7,9 @@ import TrendSection from './TrendSection'
 
 
 
-function HomeRecipe({ getSearch, search, handleSearch, recipes}) {
+function HomeRecipe({ search, setSearch, setQuery, recipes}) {
 
-  
+    
   return (
     <div className="container">
       <div className="row">
@@ -21,9 +21,9 @@ function HomeRecipe({ getSearch, search, handleSearch, recipes}) {
           <div className="body">
              
                 <Recipe 
-                    getSearch={getSearch}
+                    setSearch={setSearch}
                     search={search}
-                    handleSearch={handleSearch}
+                    setQuery={setQuery}
                     recipes={recipes} 
                 />
             

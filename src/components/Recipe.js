@@ -4,8 +4,17 @@ import SingleRecipe from './SingleRecipe'
 import { Filter2, Search } from 'react-iconly';
 
 
-const Recipe = ({ getSearch, search, handleSearch, recipes}) => {
+const Recipe = ({ setSearch, search, setQuery, recipes}) => {
 
+    const handleSearch = (e) => {
+        setSearch(e.target.value);
+    }
+    const getSearch = (e) => {
+        e.preventDefault();
+        setQuery(search);
+        setSearch('');
+    }
+    
     return (
         <div className="main-body">
             <form onSubmit={getSearch} className="search-form">

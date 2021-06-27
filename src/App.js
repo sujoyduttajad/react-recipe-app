@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import HomeRecipe from './components/HomeRecipe'
 import {API_ID, API_KEY} from './lib/API_KEY'
-import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
 
@@ -23,14 +23,7 @@ function App() {
       setRecipes(data.hits);
   }
 
-  const handleSearch = (e) => {
-      setSearch(e.target.value);
-  }
-  const getSearch = (e) => {
-      e.preventDefault();
-      setQuery(search);
-      setSearch('');
-  }
+ 
 
   return (
     <>
@@ -38,9 +31,9 @@ function App() {
         <Switch>
           <Route path='/' exact component={() => (
                       <HomeRecipe 
-                        getSearch={getSearch}
+                        setSearch={setSearch}
+                        setQuery={setQuery}
                         search={search}
-                        handleSearch={handleSearch}
                         recipes={recipes}
                       /> )}
           />
