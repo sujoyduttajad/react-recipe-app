@@ -5,9 +5,7 @@ import add from '../images/food-add.svg'
 const TrendSection = ({  recipes }) => {
 
     const healthyRecipes = recipes.filter(recipe => recipe.recipe.dietLabels[0] === 'Low-Carb' ? recipe.recipe.label : '');
-    console.log(healthyRecipes)
-    const recipeList = recipes.map(recipe => recipe.recipe.label);
-    console.log(recipeList);
+    // console.log(healthyRecipes)
 
 
     return (

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import SingleRecipe from './SingleRecipe'
 import { Filter2, Search } from 'react-iconly';
 
@@ -8,6 +7,7 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
 
     const handleSearch = (e) => {
         setSearch(e.target.value);
+        console.log(e.target.value);
     }
     const getSearch = (e) => {
         e.preventDefault();
@@ -27,6 +27,7 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
                         size="medium"/>
                     <input 
                         className="search-bar" 
+                        autoFocus
                         type="text" 
                         value={search} 
                         onChange={handleSearch}
