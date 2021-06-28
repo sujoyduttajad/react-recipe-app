@@ -1,10 +1,10 @@
 # React Recipe App
 
-[Live Demo](https://clever-edison-873c90.netlify.app/) 
+# Updating the app, in progress. Coming soon v2
 
 This React app is build with basic react search functionality and using css modules. 
 
-<img src="./Recipe App.png" alt="the screenshot of the app large screen"/>
+
 
 The recipes are fetched from - 
 Edamam - Eat better!www.edamam.com 
