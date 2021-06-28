@@ -23,7 +23,7 @@ const Sidebar = () => {
                     borderRadius: '15px',
                     backgroundColor: "#92D6AF",
                     webkitBoxShadow: 'inset 2px 2px 7px #40A96D,  -2px -2px 7px #40A96D',
-                    boxShadow: ' -2px -2px 7px #40A96D,   inset 2px 2px 7px #40A96D'
+                    boxShadow: ' inset -2px -2px 4px #40A96D,    2px 2px 7px #40A96D'
                 }}> 
                     <div className="icon-container">
                         <Document stroke='bold' name="category" set="light border" primaryColor="white" size="large"/>
