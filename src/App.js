@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import HomeRecipe from './components/HomeRecipe'
-import {API_ID, API_KEY} from './lib/API_KEY'
+import {API_ID, API_KEY} from './lib/API_KEY.js'
 import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
