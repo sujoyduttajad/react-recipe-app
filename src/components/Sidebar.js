@@ -22,9 +22,8 @@ const Sidebar = () => {
                 <NavLink to='/' activeStyle={{
                     borderRadius: '15px',
                     backgroundColor: "#92D6AF",
-                    webkitBoxShadow: 'inset 2px 2px 7px #40A96D,  -2px -2px 7px #40A96D',
-                    boxShadow: ' inset -2px -2px 4px #40A96D,    2px 2px 7px #40A96D',
-                    textShadow: 'none',
+                    webkitBoxShadow: ' 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997',
+                    boxShadow: '  inset -2px -2px 4px #70C997,  inset  2px 2px 4px #70C997',
                 }}> 
                     <div className="icon-container">
                         <Document stroke='bold' name="category" set="light border" primaryColor="white" size="large"/>
