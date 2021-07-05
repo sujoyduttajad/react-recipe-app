@@ -36,11 +36,12 @@ $Color: #26AE60;
     @include flex(column, flex-start, center);
 
     border-radius: 10px;
-    box-shadow: 0px 5px 20px rgb(71, 71, 71);
+    box-shadow: 0px 2px 10px rgb(71, 71, 71);
     margin: 20px;
     width: 18rem;
     height: 22rem;
     background-color: #fff;
+    margin: 0 auto;
 
     img {
         width: 18rem;
@@ -73,7 +74,7 @@ $Color: #26AE60;
     @include flex(column, flex-start, flex-start);
 
     border-radius: 10px;
-    box-shadow: 0px 5px 20px rgb(71, 71, 71);
+    box-shadow: 0px 2px 10px rgb(71, 71, 71);
     margin: 20px;
     margin-left: 0;
     width: 22rem;
