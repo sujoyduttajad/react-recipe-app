@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/app.scss';
-import Recipe from './Recipe'
+import SingleRecipe from './SingleRecipe'
 import Sidebar from './Sidebar'
 import TrendSection from './TrendSection'
 
@@ -17,12 +17,9 @@ function RecipePage({ recipes}) {
           </div>
         
           <div className="body">
-            {/* <Recipe 
-                setSearch={setSearch}
-                search={search}
-                setQuery={setQuery}
+            <SingleRecipe 
                 recipes={recipes} 
-            /> */}
+            />
           </div>
         
           <div className="add">
