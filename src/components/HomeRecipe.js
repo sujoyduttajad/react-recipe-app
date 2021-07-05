@@ -5,8 +5,6 @@ import Sidebar from './Sidebar'
 import TrendSection from './TrendSection'
 
 
-
-
 function HomeRecipe({ search, setSearch, setQuery, recipes}) {
 
     
@@ -19,14 +17,12 @@ function HomeRecipe({ search, setSearch, setQuery, recipes}) {
           </div>
         
           <div className="body">
-             
-                <Recipe 
-                    setSearch={setSearch}
-                    search={search}
-                    setQuery={setQuery}
-                    recipes={recipes} 
-                />
-            
+            <Recipe 
+                setSearch={setSearch}
+                search={search}
+                setQuery={setQuery}
+                recipes={recipes} 
+            />
           </div>
         
           <div className="add">

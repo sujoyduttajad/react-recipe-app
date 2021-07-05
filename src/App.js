@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import HomeRecipe from './components/HomeRecipe'
+import RecipePage from './components/RecipePage'
 import {API_ID, API_KEY} from './lib/API_KEY.js'
 import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -34,6 +35,11 @@ function App() {
                         setSearch={setSearch}
                         setQuery={setQuery}
                         search={search}
+                        recipes={recipes}
+                      /> )}
+          />
+          <Route path='/recipes' exact component={() => (
+                      <RecipePage 
                         recipes={recipes}
                       /> )}
           />

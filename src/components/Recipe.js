@@ -1,5 +1,5 @@
 import React from 'react'
-import SingleRecipe from './SingleRecipe'
+import SingleRecipe from './CardRecipe'
 import { Filter2, Search } from 'react-iconly';
 
 
