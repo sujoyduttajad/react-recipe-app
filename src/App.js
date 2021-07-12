@@ -17,11 +17,11 @@ function App() {
   }, [query]);
 
   const getRecipes = async () => {
-      const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
-      // const response = await fetch(`https://api.edamam.com/api/recipes/v2/?q=${chicken}app_id=${APP_ID}&app_key=${APP_KEY}&type=public`);
+      // const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+      const response = await fetch(`https://api.spoonacular.com/food/search?&apiKey=52a0416844ff494189c4c94381c1e4b0&number=100`);
       const data = await response.json();
-      // console.log(data.hits.filter(rec => rec.recipe.label));
-      setRecipes(data.hits);
+      console.log(data);
+      setRecipes(data.searchResults[0].results);
   }
 
  

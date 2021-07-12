@@ -47,9 +47,9 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
             <div className="recipes">
                 {recipes.map((recipe, index) => (                  
                     <SingleRecipe key={index} 
-                        title={recipe.recipe.label}
-                        calories={recipe.recipe.calories}
-                        image={recipe.recipe.image}
+                        title={recipe.name}
+                        // calories={recipe.recipe.calories}
+                        image={recipe.image}
                         // ingredients={recipe.recipe.ingredients}
                     />   
                 ))}

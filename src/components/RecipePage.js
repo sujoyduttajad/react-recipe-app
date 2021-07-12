@@ -22,9 +22,9 @@ function RecipePage({ recipes}) {
             />
           </div>
         
-          <div className="add">
+          {/* <div className="add">
             <TrendSection  recipes={recipes} />
-          </div>
+          </div> */}
         
       </div>
     </div>
