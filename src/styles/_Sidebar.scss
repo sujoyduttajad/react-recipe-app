@@ -44,7 +44,7 @@
     padding: 0.1rem 1rem;
     width: 15rem;
     // margin-bottom: 10px;
-    text-shadow: 10px 6px 15px rgb(71, 71, 71);
+    // text-shadow: 10px 6px 15px rgb(71, 71, 71);
 
     &:hover {
         border-radius: 15px;
@@ -56,9 +56,4 @@
         margin: 1rem;
         margin-left: 1rem;
     }
-}
-
-.edamam-badge {
-    z-index: 2000;
-    width: 15rem;
 }

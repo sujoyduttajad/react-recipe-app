@@ -45,8 +45,8 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
                 </button>
             </form>
             <div className="recipes">
-                {recipes.map((recipe, index) => (                  
-                    <CardRecipe key={index} 
+                {recipes.map((recipe) => (                  
+                    <CardRecipe 
                         title={recipe.name}
                         // calories={recipe.recipe.calories}
                         image={recipe.image}

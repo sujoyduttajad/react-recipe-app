@@ -5,7 +5,7 @@ import Sidebar from './Sidebar'
 import TrendSection from './TrendSection'
 
 
-function RecipePage({ recipes}) {
+function RecipePage({ recipes, dietType}) {
 
     
   return (
@@ -22,9 +22,9 @@ function RecipePage({ recipes}) {
             />
           </div>
         
-          {/* <div className="add">
-            <TrendSection  recipes={recipes} />
-          </div> */}
+          <div className="add">
+            <TrendSection  dietType={dietType} />
+          </div>
         
       </div>
     </div>

@@ -2,9 +2,9 @@ import React from 'react'
 import add from '../images/food-add.svg'
 
 
-const TrendSection = ({  recipes }) => {
+const TrendSection = ({ dietType }) => {
 
-    const healthyRecipes = recipes.filter(recipe => recipe.recipe.dietLabels[0] === 'Low-Carb' ? recipe.recipe.label : '');
+    const healthyRecipes = dietType;
     // console.log(healthyRecipes)
 
 
@@ -24,8 +24,8 @@ const TrendSection = ({  recipes }) => {
                     {
                         healthyRecipes.map(healthy => (
                             <div className="healthy-recipes">
-                                <img src={healthy.recipe.image} alt={healthy.recipe.label} />
-                                <div className="healthy-recipe-label"><p>{healthy.recipe.label}</p></div>
+                                <img src={healthy.image} alt={healthy.title} />
+                                <div className="healthy-recipe-label"><p>{healthy.title}</p></div>
                             </div>
                         ))
                     }                 
