@@ -18,7 +18,7 @@ function App() {
 
   const getRecipes = async () => {
       // const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
-      const response = await fetch(`https://api.spoonacular.com/food/search?&apiKey=52a0416844ff494189c4c94381c1e4b0&number=100`);
+      const response = await fetch(`https://api.spoonacular.com/food/search?&apiKey=${APP_KEY}&number=100`);
       const data = await response.json();
       console.log(data);
       setRecipes(data.searchResults[0].results);
