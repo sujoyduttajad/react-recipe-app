@@ -1,5 +1,5 @@
 import React from 'react'
-import SingleRecipe from './CardRecipe'
+import CardRecipe from './CardRecipe'
 import { Filter2, Search } from 'react-iconly';
 
 
@@ -46,7 +46,7 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
             </form>
             <div className="recipes">
                 {recipes.map((recipe, index) => (                  
-                    <SingleRecipe key={index} 
+                    <CardRecipe key={index} 
                         title={recipe.name}
                         // calories={recipe.recipe.calories}
                         image={recipe.image}
