@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
 
   const APP_ID = API_ID;
-  const ED_APP_KEY = ED_API_KEY;
+  // const ED_APP_KEY = ED_API_KEY;
   const APP_KEY = API_KEY;
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
@@ -19,25 +19,25 @@ function App() {
 
   const getRecipes = async () => {
       // const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
-      const response = await fetch(`https://api.spoonacular.com/food/complexSearch?query=${query}?&apiKey=${APP_KEY}&number=100`);
+      const response = await fetch(`https://api.spoonacular.com/food/search?query=${query}?&apiKey=${APP_KEY}&number=10`);
       const data = await response.json();
       console.log(data);
-      setRecipes(data.searchResults.results);
+      setRecipes(data.searchResults[0].results);
   }
 
   const [dietType, setDietType] = useState([]);
 
-  useEffect(() => {
-    getTrendingRecipes();
-  }, []);
+  // useEffect(() => {
+  //   getTrendingRecipes();
+  // }, []);
 
-  const getTrendingRecipes = async () => {
+//   const getTrendingRecipes = async () => {
     
-    const response = await fetch(`https://api.edamam.com/search?q&app_id=${APP_ID}&app_key=${ED_APP_KEY}`);
-    const dietData = await response.json();
-    console.log(dietData);
-    setDietType(dietData.results);
-}
+//     const response = await fetch(`https://api.edamam.com/search?q&app_id=${APP_ID}&app_key=${ED_APP_KEY}`);
+//     const dietData = await response.json();
+//     console.log(dietData);
+//     setDietType(dietData.results);
+// }
 
   return (
     <>
@@ -49,7 +49,7 @@ function App() {
                         setQuery={setQuery}
                         search={search}
                         recipes={recipes}
-                        dietType={dietType}
+                        // dietType={dietType}
                       /> )}
           />
           <Route path='/recipes' exact component={() => (
