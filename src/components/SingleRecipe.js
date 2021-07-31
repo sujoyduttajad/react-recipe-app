@@ -5,10 +5,19 @@ const SingleRecipe = ({ recipes }) => {
     console.log(recipes);
     return (
         <div>
-            <h1>Recipe Name</h1>
             <div>
-                <img src={""} alt="" />
+                <div>
+                    <img src={""} alt="" />
+                </div>
+                <h1>Recipe Name</h1>
             </div>
+            
+            <div>Ingredients</div>
+            <div>Rate & Review</div>
+            <div>Social share icons</div>
+            <div>Nutrients Information</div>
+            <div>Nutrients Information</div>
+            <div>Nutrients Information</div>
         </div>
     )
 }
