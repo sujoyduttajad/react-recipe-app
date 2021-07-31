@@ -21,14 +21,16 @@ const TrendSection = ({ dietType }) => {
                 </div>
                 <div className='trend-section'>
                     <h1>Healthy recipes</h1>
-                    {/* {
-                        healthyRecipes.map(healthy => (
+                    {
+                        dietType.map(healthy => (
                             <div className="healthy-recipes">
                                 <img src={healthy.recipe.image} alt={healthy.recipe.label} />
-                                <div className="healthy-recipe-label"><p>{healthy.recipe.label}</p></div>
+                                <div className="healthy-recipe-label">
+                                    <p>{healthy.recipe.label}</p>
+                                </div>
                             </div>
                         ))
-                    }  */}
+                    } 
                 </div>
             </section>
         </aside>

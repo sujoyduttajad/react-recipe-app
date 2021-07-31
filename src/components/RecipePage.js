@@ -23,7 +23,7 @@ function RecipePage({ recipes, dietType}) {
           </div>
         
           <div className="add">
-            <TrendSection  dietType={dietType} recipes={recipes} />
+            <TrendSection  dietType={dietType} />
           </div>
         
       </div>
