@@ -5,7 +5,10 @@ const SingleRecipe = ({ recipes }) => {
     console.log(recipes);
     return (
         <div>
-            <h1 >Hello World</h1>
+            <h1>Recipe Name</h1>
+            <div>
+                <img src={""} alt="" />
+            </div>
         </div>
     )
 }
