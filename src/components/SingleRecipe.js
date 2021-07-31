@@ -14,9 +14,10 @@ const SingleRecipe = ({ recipes }) => {
             
             <div>Ingredients</div>
             <div>Rate & Review</div>
+
             <div>Social share icons</div>
-            <div>Nutrients Information</div>
-            <div>Nutrients Information</div>
+            <div>Fun Facts</div>
+            <div>Cusine Type</div>
             <div>Nutrients Information</div>
         </div>
     )
