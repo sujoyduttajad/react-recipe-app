@@ -28,7 +28,7 @@ const TrendSection = ({ dietType }) => {
                                 <div className="healthy-recipe-label"><p>{healthy.recipe.label}</p></div>
                             </div>
                         ))
-                    }                  */}
+                    }  */}
                 </div>
             </section>
         </aside>
