@@ -20,7 +20,7 @@ const TrendSection = ({ dietType }) => {
                     
                 </div>
                 <div className='trend-section'>
-                    <h1>Healthy recipes</h1>
+                    <div className='trend-header'><h1>Healthy recipes</h1></div>
                     {
                         dietType.slice(0,4).map(healthy => (
                             <div className="healthy-recipes">
