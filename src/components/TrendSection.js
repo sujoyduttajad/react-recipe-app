@@ -22,7 +22,7 @@ const TrendSection = ({ dietType }) => {
                 <div className='trend-section'>
                     <h1>Healthy recipes</h1>
                     {
-                        dietType.map(healthy => (
+                        dietType.slice(0,4).map(healthy => (
                             <div className="healthy-recipes">
                                 <img src={healthy.recipe.image} alt={healthy.recipe.label} />
                                 <div className="healthy-recipe-label">
