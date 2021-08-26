@@ -48,7 +48,7 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
                 {recipes.map((recipe) => (                  
                     <CardRecipe 
                         title={recipe.name}
-                        // calories={recipe.recipe.calories}
+                        calories={recipe.content}
                         image={recipe.image}
                         // ingredients={recipe.recipe.ingredients}
                     />   
