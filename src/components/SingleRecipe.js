@@ -2,7 +2,7 @@ import React from 'react'
 
 const SingleRecipe = ({ recipes }) => {
 
-    console.log(recipes);
+    console.log(recipes.id);
     return (
         <div>
             <div>
