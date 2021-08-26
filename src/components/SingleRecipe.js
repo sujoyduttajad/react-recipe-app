@@ -9,7 +9,10 @@ const SingleRecipe = ({ recipes }) => {
                 <div>
                     <img src={""} alt="" />
                 </div>
-                <h1>Recipe Name</h1>
+                <h1>Recipe Name </h1>
+                {
+                    recipes.map((val) => console.log(val.id))
+                }
             </div>
             
             <div>Ingredients</div>
