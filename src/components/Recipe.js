@@ -50,7 +50,7 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
                         title={recipe.name}
                         calories={recipe.content}
                         image={recipe.image}
-                        // ingredients={recipe.recipe.ingredients}
+                        id={recipe.id}
                     />   
                 ))}
             </div>

@@ -2,7 +2,6 @@ import React from 'react'
 
 const SingleRecipe = ({ recipes }) => {
 
-    console.log(recipes.id);
     return (
         <div>
             <div>
@@ -11,7 +10,7 @@ const SingleRecipe = ({ recipes }) => {
                 </div>
                 <h1>Recipe Name </h1>
                 {
-                    recipes.map((val) => console.log(val.id))
+                    // recipes.map((val) => console.log(val.id))
                 }
             </div>
             

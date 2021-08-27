@@ -12,7 +12,7 @@ const HtmlTooltip = withStyles((theme) => ({
     },
   }))(Tooltip);
 
-const CardRecipe = ({title, calories, image}) => {
+const CardRecipe = ({title, calories, image, id}) => {
 
     return (
         <NavLink to='/recipes' > 
@@ -30,7 +30,12 @@ const CardRecipe = ({title, calories, image}) => {
                             } kcal</h2>
                     </div>
                     
-                    <button className='more-recipe-button'>Show More</button>
+                    <button 
+                        className='more-recipe-button'
+                        onClick={() => console.log(id)}
+                    >
+                        Show More
+                    </button>
                 </div>
             </div>
         </NavLink>
