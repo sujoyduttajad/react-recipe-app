@@ -27,6 +27,7 @@ const CardRecipe = ({title, calories, image, id}) => {
                         </HtmlTooltip>
                         <h2 className="calories-header">{
                             // console.log(calories.match((^<b></b>/\d\skcal/$)))
+                            console.log(calories)
                             } kcal</h2>
                     </div>
                     
