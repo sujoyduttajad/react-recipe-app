@@ -14,6 +14,19 @@ const HtmlTooltip = withStyles((theme) => ({
 
 const CardRecipe = ({title, calories, image, id}) => {
 
+/* ########     Stratergy     ########
+    The idea is to get the recipe_id when the user clicks(onClick) and then pass the id to 
+    the SingleRecipe.js then fetch another Spoonacular API which shows all the recipe 
+    information based on id. Then from there, we can get access to all the required information. 
+
+    Below is the API that I will be using - 
+    GET https://api.spoonacular.com/recipes/{id}/information
+
+    Resource link - https://spoonacular.com/food-api/docs#Get-Recipe-Information
+
+    I also need to get the SingleRecipe.js called inside the CardRecipe.js    
+*/
+
     return (
         <NavLink to='/recipes' > 
             <div className='recipe'>
