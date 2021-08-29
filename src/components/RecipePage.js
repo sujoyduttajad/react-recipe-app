@@ -17,9 +17,9 @@ function RecipePage({ recipes, dietType}) {
           </div>
         
           <div className="body">
-            {/* <SingleRecipe 
+            <SingleRecipe 
                 recipes={recipes} 
-            /> */}
+            />
           </div>
         
           <div className="add">
