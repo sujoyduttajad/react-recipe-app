@@ -17,7 +17,7 @@ const HtmlTooltip = withStyles((theme) => ({
 
 const CardRecipe = ({title, calories, image, id}) => {
 
-    const [recipeID, setRecipeID] = useState('');
+    const [recipeID, setRecipeID] = useState();
     
 
     const handleRecipeClick = (id) => {
