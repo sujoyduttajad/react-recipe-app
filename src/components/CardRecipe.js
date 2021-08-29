@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Tooltip from '@material-ui/core/Tooltip';
 import { withStyles } from '@material-ui/core/styles';
 import { NavLink } from "react-router-dom";
+import SingleRecipe from './SingleRecipe'
+
+
 const HtmlTooltip = withStyles((theme) => ({
     tooltip: {
       backgroundColor: '#D6D6D6',
@@ -13,6 +16,8 @@ const HtmlTooltip = withStyles((theme) => ({
   }))(Tooltip);
 
 const CardRecipe = ({title, calories, image, id}) => {
+
+    const [recipeID, setRecipeID] = useState();
 
 /* ########     Stratergy     ########
     The idea is to get the recipe_id when the user clicks(onClick) and then pass the id to 
@@ -46,9 +51,14 @@ const CardRecipe = ({title, calories, image, id}) => {
                     
                     <button 
                         className='more-recipe-button'
-                        onClick={() => console.log(id)}
+                        onClick={() => setRecipeID(id)}
                     >
                         Show More
+                        {
+                            <SingleRecipe 
+                            recipeID={recipeID} 
+                        />
+                        }
                     </button>
                 </div>
             </div>

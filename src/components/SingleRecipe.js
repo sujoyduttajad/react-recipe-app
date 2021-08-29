@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SingleRecipe = ({ recipes }) => {
+const SingleRecipe = ({ recipeID }) => {
 
     return (
         <div>
@@ -8,10 +8,8 @@ const SingleRecipe = ({ recipes }) => {
                 <div>
                     <img src={""} alt="" />
                 </div>
-                <h1>Recipe Name </h1>
-                {
-                    // recipes.map((val) => console.log(val.id))
-                }
+                <h1>Recipe Name - {recipeID}</h1>
+                
             </div>
             
             <div>Ingredients</div>
