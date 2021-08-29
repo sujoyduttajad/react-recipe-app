@@ -17,8 +17,13 @@ const HtmlTooltip = withStyles((theme) => ({
 
 const CardRecipe = ({title, calories, image, id}) => {
 
-    const [recipeID, setRecipeID] = useState(0);
-    console.log(recipeID)
+    const [recipeID, setRecipeID] = useState('');
+    
+
+    const handleRecipeClick = (id) => {
+        setRecipeID(id);
+        console.log(recipeID);
+    }
 
 /* ########     Stratergy     ########
     The idea is to get the recipe_id when the user clicks(onClick) and then pass the id to 
@@ -34,7 +39,7 @@ const CardRecipe = ({title, calories, image, id}) => {
 */
 
     return (
-        <NavLink to='/recipes' > 
+        <NavLink to={`/recipes/${recipeID}`} > 
             <div className='recipe'>
                 <HtmlTooltip arrow  title={title} placement="bottom">
                     <img className='image' src={image} alt={title} />
@@ -52,7 +57,7 @@ const CardRecipe = ({title, calories, image, id}) => {
                     
                     <button 
                         className='more-recipe-button'
-                        onClick={() => console.log(id)}
+                        onClick={() => handleRecipeClick(id)}
                     >
                         Show More
                         {/* {

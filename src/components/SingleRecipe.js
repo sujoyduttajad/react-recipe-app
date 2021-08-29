@@ -2,8 +2,8 @@ import React from 'react'
 
 const SingleRecipe = ({ recipeID }) => {
 
-    console.log(recipeID);
-    
+    // console.log(recipeID);
+
     return (
         <div>
             <div>
