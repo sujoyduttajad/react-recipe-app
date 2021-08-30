@@ -34,12 +34,12 @@ const CardRecipe = ({title, calories, image, id}) => {
     GET https://api.spoonacular.com/recipes/{id}/information
 
     Resource link - https://spoonacular.com/food-api/docs#Get-Recipe-Information
-
+to={`/recipes/${recipeID}`}
     I also need to get the SingleRecipe.js called inside the CardRecipe.js    
 */
 
     return (
-        <NavLink to={`/recipes/${recipeID}`} > 
+        <NavLink to='/recipes' > 
             <div className='recipe'>
                 <HtmlTooltip arrow  title={title} placement="bottom">
                     <img className='image' src={image} alt={title} />
