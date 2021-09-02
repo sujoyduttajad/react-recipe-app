@@ -56,6 +56,9 @@ function App() {
           />
           <Route path='/recipes' exact component={() => (
                       <RecipePage 
+                        setSearch={setSearch}
+                        setQuery={setQuery}
+                        search={search}
                         recipes={recipes}
                         dietType={dietType}
                       /> )}
