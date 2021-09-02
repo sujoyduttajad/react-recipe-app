@@ -13,7 +13,7 @@ const Sidebar = () => {
                     <img src={logo} alt="logo" />
                 </div>
                 
-                <NavLink to='/' activeStyle={{
+                <NavLink exact to='/' activeStyle={{
                     borderRadius: '15px',
                     backgroundColor: "#92D6AF",
                     webkitBoxShadow: ' 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997',

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/app.scss';
-import SingleRecipe from './SingleRecipe'
+// import SingleRecipe from './SingleRecipe'
 import Sidebar from './Sidebar'
 import TrendSection from './TrendSection'
 import Recipe from './Recipe';
