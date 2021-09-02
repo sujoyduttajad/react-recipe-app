@@ -16,14 +16,14 @@ function HomeRecipe({ search, setSearch, setQuery, recipes, dietType}) {
             <Sidebar />           
           </div>
         
-          <div className="body">
+          {/* <div className="body">
             <Recipe 
                 setSearch={setSearch}
                 search={search}
                 setQuery={setQuery}
                 recipes={recipes} 
             />
-          </div>
+          </div> */}
         
           <div className="add">
             <TrendSection  dietType={dietType} />

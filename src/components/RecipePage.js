@@ -3,9 +3,9 @@ import '../styles/app.scss';
 import SingleRecipe from './SingleRecipe'
 import Sidebar from './Sidebar'
 import TrendSection from './TrendSection'
+import Recipe from './Recipe';
 
-
-function RecipePage({ recipes, dietType}) {
+function RecipePage({ search, setSearch, setQuery, recipes, dietType}) {
 
     
   return (
@@ -17,9 +17,12 @@ function RecipePage({ recipes, dietType}) {
           </div>
         
           <div className="body">
-            <SingleRecipe 
-                recipes={recipes} 
-            />
+            <Recipe 
+                  setSearch={setSearch}
+                  search={search}
+                  setQuery={setQuery}
+                  recipes={recipes} 
+              />
           </div>
         
           <div className="add">

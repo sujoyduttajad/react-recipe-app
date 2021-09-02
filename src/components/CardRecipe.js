@@ -60,11 +60,11 @@ to={`/recipes/${recipeID}`}
                         onClick={() => handleRecipeClick(id)}
                     >
                         Show More
-                        {/* {
+                        {
                             <SingleRecipe 
                             recipeID={recipeID} 
                         />
-                        } */}
+                        }
                     </button>
                 </div>
             </div>
