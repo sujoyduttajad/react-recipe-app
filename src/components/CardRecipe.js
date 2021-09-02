@@ -17,7 +17,7 @@ const HtmlTooltip = withStyles((theme) => ({
 
 const CardRecipe = ({title, calories, image, id}) => {
 
-    const [recipeID, setRecipeID] = useState();
+    const [recipeID, setRecipeID] = useState(0);
     
 
     const handleRecipeClick = (id) => {
@@ -34,7 +34,8 @@ const CardRecipe = ({title, calories, image, id}) => {
     GET https://api.spoonacular.com/recipes/{id}/information
 
     Resource link - https://spoonacular.com/food-api/docs#Get-Recipe-Information
-to={`/recipes/${recipeID}`}
+    TO nest directories --> to={`/recipes/${recipeID}`}
+    TO go back --> to='/recipes'
     I also need to get the SingleRecipe.js called inside the CardRecipe.js    
 */
 
@@ -55,17 +56,20 @@ to={`/recipes/${recipeID}`}
                             } kcal</h2>
                     </div>
                     
-                    <button 
-                        className='more-recipe-button'
-                        onClick={() => handleRecipeClick(id)}
-                    >
-                        Show More
-                        {
-                            <SingleRecipe 
-                            recipeID={recipeID} 
-                        />
-                        }
-                    </button>
+                    <NavLink to={`/recipes/${recipeID}`} > 
+                        <button 
+                            className='more-recipe-button'
+                            onClick={() => handleRecipeClick(id)}
+                        >
+                            Show More
+                            { recipeID > 0 ?
+                                <SingleRecipe 
+                                    recipeID={recipeID} 
+                                />
+                                : ''
+                            }
+                        </button>
+                    </NavLink>
                 </div>
             </div>
         </NavLink>
