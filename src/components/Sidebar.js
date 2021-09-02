@@ -13,12 +13,19 @@ const Sidebar = () => {
                     <img src={logo} alt="logo" />
                 </div>
                 
-                <div className="icon-container">
-                    <Category stroke='bold' name="category" set="light border" primaryColor="white" size="large"/>
-                    <h3>Overview</h3>
-                </div>
-
                 <NavLink to='/' activeStyle={{
+                    borderRadius: '15px',
+                    backgroundColor: "#92D6AF",
+                    webkitBoxShadow: ' 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997',
+                    boxShadow: '  inset -2px -2px 4px #70C997,  inset  2px 2px 4px #70C997',
+                }}> 
+                    <div className="icon-container">
+                        <Category stroke='bold' name="category" set="light border" primaryColor="white" size="large"/>
+                        <h3>Overview</h3>
+                    </div>
+                </NavLink>
+
+                <NavLink to='/recipes' activeStyle={{
                     borderRadius: '15px',
                     backgroundColor: "#92D6AF",
                     webkitBoxShadow: ' 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997',
