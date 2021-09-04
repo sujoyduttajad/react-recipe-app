@@ -48,7 +48,7 @@ const CardRecipe = ({title, calories, image, id}) => {
                 <div className="recipe-name-container">
                     <div className="recipe-calories-name">
                         <HtmlTooltip arrow  title={title} placement="left">
-                            <h1 className='recipe-header'>{title.length > 20 ? title.slice(0, 15)+'...' : title}</h1>
+                            <h1 className='recipe-header'>{title.length > 20 ? title.slice(0, 20)+'...' : title}</h1>
                         </HtmlTooltip>
                         <h2 className="calories-header">{
                             // console.log(calories.match((^<b></b>/\d\skcal/$)))
