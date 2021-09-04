@@ -35,6 +35,8 @@ $secondary-grey: #999999;
 }
 .recipe-calories-name {
     @include flex(column, flex-start, flex-start);
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .recipe-header {
