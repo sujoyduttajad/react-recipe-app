@@ -31,7 +31,7 @@ $secondary-grey: #999999;
 
 .recipe-name-container {
     @include flex(column, flex-start, center);
-    width: 20em;
+    width: 25em;
 }
 .recipe-calories-name {
     @include flex(column, flex-start, flex-start);
