@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import './styles/app.scss';
 import HomeRecipe from './components/HomeRecipe'
 import RecipePage from './components/RecipePage'
 import { API_ID, ED_API_KEY ,API_KEY } from './lib/API_KEY.js'

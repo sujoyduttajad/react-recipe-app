@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/app.scss';
 import Recipe from './Recipe'
 import Sidebar from './Sidebar'
 import TrendSection from './TrendSection'

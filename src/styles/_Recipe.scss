@@ -17,8 +17,9 @@ $Color: #26AE60;
     // left: 12rem;
   }
   .recipes {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex(row, space-evenly, center);
+    // display: flex;
+    // justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0 auto;
   }
