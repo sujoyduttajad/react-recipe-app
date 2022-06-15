@@ -44,17 +44,15 @@ const CardRecipe = ({ title, calories, image, id }) => {
       </HtmlTooltip>
       <div className="recipe-name-container">
         <div className="recipe-calories-name">
-          <HtmlTooltip arrow title={title} placement="left">
-            <h1 className="recipe-header">
-              {title.length > 20 ? title.slice(0, 20) + "..." : title}
-            </h1>
-          </HtmlTooltip>
+          <h1 className="recipe-header">
+            {title.length > 20 ? title.slice(0, 20) + "..." : title}
+          </h1>
           <h2 className="calories-header">
             {
               // console.log(calories.match((^<b></b>/\d\skcal/$)))
               // console.log(calories)
             }{" "}
-            kcal
+            500 kcal
           </h2>
         </div>
         <button
