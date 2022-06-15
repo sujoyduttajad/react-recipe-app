@@ -1,214 +1,208 @@
-
 $primary-black: #303030;
 $secondary-grey: #999999;
-$background-color: #FAF9FB;
-$Color: #26AE60;
+$background-color: #faf9fb;
+$Color: #26ae60;
 
 @mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+.main-body {
+  width: 65vw;
+
+  .recipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+}
+
+.search-form {
+  @include flex(row, space-evenly, center);
+  padding: 20px;
+  padding-right: 5px;
+  margin-left: 1rem;
+  padding-top: 5%;
+  max-height: 10vh;
+}
+.search-container {
+  @include flex(row, flex-start, center);
+  width: 70%;
+  height: 1.6rem;
+  padding: 0.4em;
+  padding-left: 0.5rem;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 1px 4px 10px rgb(209, 209, 209), 1px -2px 10px rgb(209, 209, 209);
+  border: 0;
+  outline: 0;
+  line-height: 1em;
+  &:focus-within {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px,
+      rgba(0, 0, 0, 0.35) 0px -2px 10px;
+  }
+}
+.search-bar {
+  font-size: 1.2em;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding-left: 1rem;
+  font-size: 1.2em;
+  font-weight: 600;
+  background-color: transparent !important;
+  vertical-align: middle;
+  color: $primary-black !important;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-top: 1em;
+    color: #bdbdbd;
+    vertical-align: middle;
+  }
+}
+
+.filter-button {
+  @include flex(row, center, center);
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  background-color: $Color !important;
+  color: #faf9fb;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 3rem;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.3em;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 2px 7px rgb(71, 71, 71);
+  text-shadow: 10px 6px 15px rgb(71, 71, 71);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 5px 15px rgb(71, 71, 71);
+  }
+
+  span {
+    padding-left: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 540px) {
+  .search-bar {
+    width: 100%;
+    font-size: 28px;
+    border: none;
+    padding: 10px;
+    border-radius: 11px;
+  }
+  .search-button {
+    width: 87%;
+    margin-left: 6%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* mobile layout */
+  .search-bar {
+    width: 85%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font-size: 28px;
+    border: none;
+    padding: 10px;
+    border-radius: 11px;
+  }
+  .search-form {
+    min-height: 10vh;
+    display: inline;
+    flex-direction: column;
+    max-width: 50%;
+    background: none;
+  }
+  .search-button {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  .header {
+    margin-right: 5%;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  // .recipes {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-wrap: wrap;
+  //   max-width: 88%;
+  //   padding-left: 12px;
+  //   padding-right: 12px;
+  // }
+  .search-form {
+    min-height: 10vh;
+    display: inline;
+    flex-direction: column;
+    max-width: 50%;
+    background: none;
+  }
+  .search-bar {
+    width: 85%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font-size: 28px;
+    border: none;
+    padding: 10px;
+    border-radius: 11px;
+  }
+  .search-button {
+    width: 8rem;
+    margin-left: 6%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .recipes {
     display: flex;
-    flex-direction: $direction;
-    align-items: $align;
-    justify-content: $justify;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
-
-  .main-body {  
-    width: 65vw;
-  }
-
+}
+@media screen and (min-width: 1023px) {
   .recipes {
     @include flex(row, space-evenly, center);
     flex-wrap: wrap;
-    margin: 0 auto;
-  }
-
-  .search-form {
-    @include flex(row, space-evenly, center);
-    padding: 20px;
-    padding-right: 5px;
-    margin-left: 1rem;
-    padding-top: 5%;
-    max-height: 10vh;
-  }
-  .search-container {
-    @include flex(row, flex-start, center);
-    width: 70%;
-    height: 1.6rem;
-    padding: 0.4em;
-    padding-left: 0.5rem;
-    border-radius: 20px;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 1px 4px 10px rgb(209, 209, 209), 1px -2px 10px rgb(209, 209, 209);
-    border: 0;
-    outline: 0;
-    line-height: 1em;
-    &:focus-within {
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px, rgba(0, 0, 0, 0.35) 0px -2px 10px;
-    }
-  }
-  .search-bar {
-    font-size: 1.2em;
-    vertical-align: middle;
-    padding-top: 5px;
-  }
-
-  input {
-    border: 0;
-    outline: 0;
     width: 100%;
-    padding-left: 1rem;
-    font-size: 1.2em;
-    font-weight: 600;
-    background-color: transparent !important;
-    vertical-align: middle;
-    color: $primary-black !important;
-
-    &::placeholder {
-        font-weight: 500;
-        font-size: 1.2em;
-        padding-top: 1em;
-        color: #BDBDBD;
-        vertical-align: middle;
-    }
+    padding: 5px;
   }
-  
-  .filter-button {
-    @include flex(row, center, center);
-    border: 0;
-    outline: 0;
-    padding: 10px 20px;
-    background-color: $Color !important;
-    color: #FAF9FB;
-    border-radius: 10px;
-    margin-left: 5px;
-    margin-right: 3rem;
-    width: 10rem;
-    height: 2.5rem;
-    font-size: 1.3em;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0px 2px 7px rgb(71, 71, 71);
-    text-shadow: 10px 6px 15px rgb(71, 71, 71);
-    cursor: pointer;
-
-    &:hover {
-      box-shadow: 0px 5px 15px rgb(71, 71, 71);
-    }
-
-    span {
-        padding-left: 0.8rem;
-    }
-  }
-  
-  
-  
-  
-  @media screen and (min-width: 480px) and (max-width: 540px) {
-    
-    .search-bar {
-      width: 100%;
-      font-size: 28px;
-      border: none;
-      padding: 10px;
-      border-radius: 11px;
-     
-    }
-    .search-button {
-      width: 87%;
-      margin-left: 6%;
-      margin-right: 5%;
-      margin-bottom: 5%;
-    }
-  }
-  
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    /* mobile layout */
-    .search-bar {
-      width: 85%;
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-bottom: 5%;
-      font-size: 28px;
-      border: none;
-      padding: 10px;
-      border-radius: 11px;
-      
-    }
-    .search-form {
-      min-height: 10vh;
-      display: inline;
-      flex-direction: column;
-      max-width: 50%;
-      background: none;
-    }
-    .search-button {
-      width: 88%;
-      margin-left: 6%;
-      margin-right: 5%;
-      margin-bottom: 5%;
-    }
-    .header {
-      margin-right: 5%;
-      text-align: center;
-      margin-left: 5%;
-      font-size: 60px;
-    }
-  }
-  
-  @media screen and (min-width: 540px) and (max-width: 767px) {
-    // .recipes {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   align-items: center;
-    //   flex-wrap: wrap;
-    //   max-width: 88%;
-    //   padding-left: 12px;
-    //   padding-right: 12px;
-    // }
-    .search-form {
-      min-height: 10vh;
-      display: inline;
-      flex-direction: column;
-      max-width: 50%;
-      background: none;
-    }
-    .search-bar {
-      width: 85%;
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-bottom: 5%;
-      font-size: 28px;
-      border: none;
-      padding: 10px;
-      border-radius: 11px;
-      
-    }
-    .search-button {
-      width: 8rem;
-      margin-left: 6%;
-      margin-right: 5%;
-      margin-bottom: 5%;
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .recipes {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      max-width: 100%;
-      padding-left: 12px;
-      padding-right: 12px;
-    }
-  
-  }
-  @media screen and (min-width: 1023px) { 
-    .recipes {
-        @include flex(row, space-evenly, center);
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 5px;
-    }
-    
-  }
+}
