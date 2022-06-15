@@ -12,14 +12,11 @@ $Color: #26AE60;
   }
 
   .main-body {  
-    width: 60vw;
-    // position: relative;
-    // left: 12rem;
+    width: 65vw;
   }
+
   .recipes {
     @include flex(row, space-evenly, center);
-    // display: flex;
-    // justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0 auto;
   }
