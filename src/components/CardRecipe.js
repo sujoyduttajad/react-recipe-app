@@ -62,7 +62,7 @@ const CardRecipe = ({ title, calories, image, id }) => {
           onClick={() => handleRecipeClick(id)}
         >
           <NavLink to={`/recipes/${recipeID}`}>
-            Show More
+            SHOW MORE
             {recipeID > 0 ? <SingleRecipe recipeID={recipeID} /> : ""}
           </NavLink>
         </button>
