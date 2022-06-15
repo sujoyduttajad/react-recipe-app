@@ -30,7 +30,7 @@ $secondary-grey: #999999;
 
 .recipe-name-container {
     @include flex(column, flex-start, center);
-    width: 100%;
+    padding: 1em 0;
 }
 .recipe-calories-name {
     @include flex(column, flex-start, flex-start);
@@ -39,7 +39,7 @@ $secondary-grey: #999999;
 }
 
 .recipe-header {
-    margin: 1rem 0 0 0.2rem;
+    margin: 0 0.2rem;
     font-size: 1.2rem;
     font-weight: 700;
     width: 100%;
