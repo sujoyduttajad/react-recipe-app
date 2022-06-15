@@ -1,57 +1,58 @@
-
 @mixin flex($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    align-items: $align;
-    justify-content: $justify;
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
 }
 
-
 .slideout {
-    @include flex(column, flex-start, flex-start);
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 10;
-    z-index: 100;
-    font-family: 'Public Sans', sans-serif;
-    background-color: #26AE60;
-    color: aliceblue;
-    transform: translateX(0%);
-    transition-delay: 0s , 0.9s , 0.9s;
-    transition-duration: 0.5s;
-    opacity: 1;
-    width: 17rem;
-    padding: 1.7rem;
-    padding-right: 1.2rem;
-    height: 100vh;
-    
+  @include flex(column, flex-start, flex-start);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 10;
+  z-index: 100;
+  font-family: "Public Sans", sans-serif;
+  background-color: #26ae60;
+  color: aliceblue;
+  transform: translateX(0%);
+  transition-delay: 0s, 0.9s, 0.9s;
+  transition-duration: 0.5s;
+  opacity: 1;
+  width: 13vw;
+  padding: 1.7rem;
+  padding-right: 1.2rem;
+  height: 100vh;
 }
 
 .logo-container {
-    @include flex(row, center, flex-start);
-    margin: 0 auto;
-    img {
-        width: 100%;
-        height: 70%;
-    }
+  @include flex(row, center, flex-start);
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: 70%;
+  }
 }
 
 .icon-container {
-    @include flex(row, flex-start, center);
-    cursor: pointer;
-    padding: 0.1rem 1rem;
-    width: 15rem;
+  @include flex(row, flex-start, center);
+  cursor: pointer;
+  padding: 0.1rem 1rem;
+  width: 100%;
+  font-size: 2em;
 
-    &:hover {
-        border-radius: 15px;
-        background-color: #92D6AF;
-        transition: all 0.2s ease-in-out;
-    }
-    h3 {
-        font-size: 1.6rem;
-        font-weight: 400;
-        margin: 1rem;
-        margin-left: 1rem;
-    }
+  &:hover {
+    width: 100%;
+    border-radius: 15px;
+    background-color: #92d6af;
+    transition: all 0.2s ease-in-out;
+  }
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 1rem;
+    margin-left: 1rem;
+  }
 }
+
+
