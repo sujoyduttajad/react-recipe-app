@@ -25,7 +25,7 @@ const Sidebar = () => {
           activeStyle={{
             width: "100%",
             borderRadius: "15px",
-            backgroundColor: "#92D6AF",
+            opacity: "1",
             webkitBoxShadow:
               " 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997",
             boxShadow:
@@ -49,7 +49,7 @@ const Sidebar = () => {
           activeStyle={{
             width: "100%",
             borderRadius: "15px",
-            backgroundColor: "#92D6AF",
+            opacity: "1",
             webkitBoxShadow:
               " 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997",
             boxShadow:
@@ -73,7 +73,7 @@ const Sidebar = () => {
           activeStyle={{
             width: "100%",
             borderRadius: "15px",
-            backgroundColor: "#92D6AF",
+            opacity: "1",
             webkitBoxShadow:
               " 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997",
             boxShadow:
@@ -97,7 +97,7 @@ const Sidebar = () => {
           activeStyle={{
             width: "100%",
             borderRadius: "15px",
-            backgroundColor: "#92D6AF",
+            opacity: "1",
             webkitBoxShadow:
               " 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997",
             boxShadow:
@@ -121,7 +121,7 @@ const Sidebar = () => {
           activeStyle={{
             width: "100%",
             borderRadius: "15px",
-            backgroundColor: "#92D6AF",
+            opacity: "1",
             webkitBoxShadow:
               " 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997",
             boxShadow:
@@ -145,7 +145,7 @@ const Sidebar = () => {
           activeStyle={{
             width: "100%",
             borderRadius: "15px",
-            backgroundColor: "#92D6AF",
+            opacity: "1",
             webkitBoxShadow:
               " 2px 2px 4px #70C997,  inset -2px -2px 4px #70C997",
             boxShadow:
