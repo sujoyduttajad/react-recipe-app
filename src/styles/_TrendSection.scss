@@ -24,9 +24,9 @@ $Color: #26AE60;
     transform: translateX(0%);
     overflow-y: auto;
     opacity: 1;
-    width: 22rem;
-    padding: 1.7rem;
-    padding-left: 1.2rem;
+    width: 20rem;
+    padding: 1rem 0;
+    // padding-left: 1.2rem;
     height: 100vh;
     
 }
@@ -78,9 +78,8 @@ $Color: #26AE60;
     border-radius: 10px;
     margin: 20px;
     margin-left: 0;
-    width: 20em;
     height: 100%;
-    margin: 3em auto;
+    margin: 3em 1em;
     margin-bottom: 3rem;
     background-color: #fff;
     font-family: inherit;
@@ -108,7 +107,6 @@ $Color: #26AE60;
         width: 8rem;
         height: 8rem;   
         border-radius: 50%;
-        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         box-shadow:  5px 5px 5px #d4d3d3, 
                     -5px -5px 5px #F3F3F3;
         transition: box-shadow .35s ease !important;
