@@ -6,9 +6,7 @@ import { NavLink } from "react-router-dom";
 const Sidebar = () => {
     return (
         <aside>
-            
             <section className="slideout">
-
                 <div className="logo-container">
                     <img src={logo} alt="logo" />
                 </div>
