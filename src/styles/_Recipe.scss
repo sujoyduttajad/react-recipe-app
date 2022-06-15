@@ -37,15 +37,14 @@ $Color: #26ae60;
   height: 1.6rem;
   padding: 0.4em;
   padding-left: 0.5rem;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: all 0.2s ease-in-out;
-  box-shadow: 1px 4px 10px rgb(209, 209, 209), 1px -2px 10px rgb(209, 209, 209);
-  border: 0;
+  border: 2.5px solid #eee;
   outline: 0;
   line-height: 1em;
   &:focus-within {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px,
-      rgba(0, 0, 0, 0.35) 0px -2px 10px;
+    box-shadow: 1px 4px 10px rgb(209, 209, 209),
+      1px -2px 10px rgb(209, 209, 209);
   }
 }
 .search-bar {
@@ -88,14 +87,11 @@ input {
   height: 2.5rem;
   font-size: 1.3em;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 2px 7px rgb(71, 71, 71);
-  text-shadow: 10px 6px 15px rgb(71, 71, 71);
   cursor: pointer;
-
   &:hover {
-    box-shadow: 0px 5px 15px rgb(71, 71, 71);
+    box-shadow: 1px 4px 10px rgb(209, 209, 209),
+      1px -2px 10px rgb(209, 209, 209);
   }
-
   span {
     padding-left: 0.8rem;
   }
