@@ -44,7 +44,7 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
                     <span>Filter</span>
                 </button>
             </form>
-            <div className="recipes">
+            <section className="recipes">
                 {recipes.map((recipe) => (                  
                     <CardRecipe 
                         title={recipe.name}
@@ -53,7 +53,7 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
                         id={recipe.id}
                     />   
                 ))}
-            </div>
+            </section>
         </div>
     )
 }
