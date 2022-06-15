@@ -20,8 +20,8 @@
   transition-duration: 0.5s;
   opacity: 1;
   width: 13vw;
-  padding: 1.7rem;
-  padding-right: 1.2rem;
+  padding: 1.7rem 1.4rem;
+//   padding-right: 1rem;
   height: 100vh;
 }
 
@@ -37,15 +37,12 @@
 .icon-container {
   @include flex(row, flex-start, center);
   cursor: pointer;
-  padding: 0.1rem 1rem;
-  width: 100%;
+  padding: 0.1em 0.3em;
+  width: 10em;
   font-size: 2em;
-
+  opacity: 0.8;
   &:hover {
-    width: 100%;
-    border-radius: 15px;
-    background-color: #92d6af;
-    transition: all 0.2s ease-in-out;
+    opacity: 1;
   }
   h3 {
     font-size: 1.3rem;
@@ -54,5 +51,3 @@
     margin-left: 1rem;
   }
 }
-
-
