@@ -9,7 +9,6 @@
 
 .slideout {
     @include flex(column, flex-start, flex-start);
-
     position: fixed;
     top: 0;
     left: 0;
@@ -30,11 +29,11 @@
 }
 
 .logo-container {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    @include flex(row, center, flex-start);
+    margin: 0 auto;
     img {
-        width: 17rem;
-        height: 7rem;
+        width: 100%;
+        height: 70%;
     }
 }
 
