@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "./Sidebar";
-import TrendSection from "./TrendSection";
-import Recipe from "./Recipe";
+import Sidebar from "../components/Sidebar";
+import TrendSection from "../components/TrendSection";
+import Recipe from "../components/Recipe";
 
 function RecipePage({ search, setSearch, setQuery, recipes, dietType }) {
   return (
