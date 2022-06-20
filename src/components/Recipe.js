@@ -27,8 +27,8 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
                         size="medium"/>
                     <input 
                         className="search-bar" 
-                        autoFocus
                         type="text" 
+                        ref={input => input && input.focus()}
                         value={search} 
                         onChange={handleSearch}
                         placeholder="Search any recipe"
