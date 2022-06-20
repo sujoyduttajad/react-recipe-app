@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles/app.scss";
-import HomeRecipe from "./components/HomeRecipe";
-import RecipePage from "./components/RecipePage";
+import Overview from "./pages/Overview";
+import RecipePage from "./pages/RecipePage";
 import { API_ID, ED_API_KEY, API_KEY } from "./lib/API_KEY.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -52,7 +52,7 @@ function App() {
             path="/"
             exact
             component={() => (
-              <HomeRecipe
+              <Overview
                 setSearch={setSearch}
                 setQuery={setQuery}
                 search={search}
