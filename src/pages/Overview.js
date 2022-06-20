@@ -1,10 +1,10 @@
 import React from 'react'
-import Recipe from './Recipe'
-import Sidebar from './Sidebar'
-import TrendSection from './TrendSection'
+import Recipe from '../components/Recipe'
+import Sidebar from '../components/Sidebar'
+import TrendSection from '../components/TrendSection'
 
 
-function HomeRecipe({ search, setSearch, setQuery, recipes, dietType}) {
+function Overview({ search, setSearch, setQuery, recipes, dietType}) {
 
     
   return (
@@ -35,4 +35,4 @@ function HomeRecipe({ search, setSearch, setQuery, recipes, dietType}) {
 }
 
 
-export default HomeRecipe;
+export default Overview;
