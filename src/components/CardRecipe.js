@@ -45,7 +45,8 @@ const CardRecipe = ({ title, calories, image, id }) => {
       <div className="recipe-name-container">
         <div className="recipe-calories-name">
           <h1 className="recipe-header">
-            {title.length > 20 ? title.slice(0, 20) + "..." : title}
+            {/* {title.length > 20 ? title.slice(0, 28) + "..." : title} */}
+            {title}
           </h1>
           <h2 className="calories-header">
             {
