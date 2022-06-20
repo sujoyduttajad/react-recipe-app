@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Tooltip from "@material-ui/core/Tooltip";
 import { withStyles } from "@material-ui/core/styles";
 import { NavLink } from "react-router-dom";
-import SingleRecipe from "./SingleRecipe";
+import SingleRecipe from "../pages/SingleRecipe";
 
 const HtmlTooltip = withStyles((theme) => ({
   tooltip: {
