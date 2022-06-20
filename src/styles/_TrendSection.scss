@@ -65,10 +65,6 @@ $Color: #26AE60;
         box-shadow: 0px 2px 7px rgb(71, 71, 71);
         cursor: pointer;
         transition: all 0.5s ease;
-
-        &:hover {
-            box-shadow: 0px 5px 10px rgb(71, 71, 71);
-        }
     }
 }
 
@@ -102,7 +98,7 @@ $Color: #26AE60;
     @include flex(row, flex-start, center);
     cursor: pointer;
     transition: all 0.5s ease;
-    margin: 0.8rem 2rem;
+    margin: 0.8rem;
     img {
         width: 8rem;
         height: 8rem;   
