@@ -31,6 +31,7 @@ $secondary-grey: #999999;
 .recipe-name-container {
     @include flex(column, flex-start, center);
     padding: 1em 0;
+    width: 85%;
 }
 .recipe-calories-name {
     @include flex(column, flex-start, flex-start);
@@ -50,7 +51,7 @@ $secondary-grey: #999999;
     color: $secondary-grey;
     font-weight: 300;
     font-size: 0.8rem;
-    margin: 0;
+    margin-top: 0.5em;
     width: 100%;
     margin-left: 0.2rem;
     margin-bottom: 1rem;
