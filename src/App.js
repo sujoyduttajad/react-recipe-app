@@ -24,7 +24,7 @@ function App() {
       `https://api.spoonacular.com/food/search?query=${query}?&apiKey=${APP_KEY}&number=10`
     );
     const data = await response.json();
-    console.log(data);
+    console.log(data.searchResults[0].results);
     setRecipes(data.searchResults[0].results);
   };
 
@@ -41,7 +41,7 @@ function App() {
     const dietData = await response.json();
     // console.log(dietData.hits)
     setDietType(dietData.hits);
-    console.log(dietType);
+    // console.log(dietType);
   };
 
   return (
