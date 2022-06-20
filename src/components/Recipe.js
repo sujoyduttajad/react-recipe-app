@@ -14,6 +14,7 @@ const Recipe = ({ setSearch, search, setQuery, recipes}) => {
         setQuery(search);
         setSearch('');
     }
+    console.log(recipes);
     
     return (
         <div className="main-body">
