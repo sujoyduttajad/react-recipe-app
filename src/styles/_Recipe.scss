@@ -59,7 +59,7 @@ input {
   outline: 0;
   width: 100%;
   padding-left: 1rem;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
   background-color: transparent !important;
   vertical-align: middle;
@@ -67,7 +67,7 @@ input {
 
   &::placeholder {
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
     padding-top: 1em;
     color: #bdbdbd;
     vertical-align: middle;
